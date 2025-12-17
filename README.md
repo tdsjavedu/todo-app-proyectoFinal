@@ -1,50 +1,60 @@
-# Welcome to your Expo app 👋
+To-Do List App Móvil para Android
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicacion creada con el fin de utilizar para llevar un control de tareas pendientes y completadas.
 
-## Get started
+A continuacion encontraras las instrucciones para probar la aplicacion en tu entorno utilizando la aplicacion de Expo Go.
 
-1. Install dependencies
+Requisitos Previos:
 
-   ```bash
-   npm install
-   ```
+- Node.js (versión 14 o superior)
+- npm o yarn
+- Expo CLI
+- Expo Go app en tu teléfono Android (descárgala de Google Play Store)
 
-2. Start the app
+------------------------------------------------------------------------
+Instalacion de dependencias 
 
-   ```bash
-   npx expo start
-   ```
+# 1. Instalar Expo CLI globalmente
+npm install -g expo-cli
 
-In the output, you'll find options to open the app in a
+# 2. Clonar el Repo
+git remote add origin https://github.com/tdsjavedu/todo-app-proyectoFinal
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+# 3. Instalar dependencias necesarias
+npm install lucide-react-native
+npm install @react-native-async-storage/async-storage
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+# 4. Ejecutar la aplicacion
+npm start
 
-## Get a fresh project
+# 5. Descargar la aplicacion EXPO Go
 
-When you're ready, run:
+# 6. Al iniciar la aplicacion con "npm start" se le brindara un codigo QR con el cual puede acceder a la aplicacion directamente desde el celular y realizar las pruebas correspondientes.
 
-```bash
-npm run reset-project
-```
+Características Implementadas
+- Pantalla de Inicio
+- Agregar Tareas
+- Formulario con título, descripción y tipo
+- Lista de Tareas
+- Detalles de Tarea
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+Tecnologías Utilizadas
 
-To learn more about developing your project with Expo, look at the following resources:
+- Framework: React Native con Expo
+- Almacenamiento: AsyncStorage (persistencia local)
+- Iconos: Emojis nativos
+- Diseño: StyleSheet de React Native
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Estructura del proyecto:
+TodoListApp/
+├── node_modules/
+├── assets/
+│   ├── icon.png
+│   └── splash.png
+├── App
+|    |__index.tsx
+├── app.json
+├── package.json
+├── babel.config.js
+└── package-lock.json
